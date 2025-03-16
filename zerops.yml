@@ -16,6 +16,8 @@ zerops:
         - pnpm exec next telemetry disable
         - zsc test tcp -6 db:5432 --timeout 30s
         - zsc test tcp -6 mailpit:1025 --timeout 30s
+        # pnpm payload migrate:create initial
+        - pnpm payload generate:importmap
         - pnpm payload migrate:status
         - pnpm payload migrate
         - pnpm build
