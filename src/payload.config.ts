@@ -100,12 +100,12 @@ export default buildConfig({
   email: nodemailerAdapter({
     defaultFromAddress: 'noreply@zerops.io',
     defaultFromName: 'Payload Recipe',
+    skipVerify: true,
     // Nodemailer transportOptions
     transportOptions: {
       host: 'mailpit',
       port: 1025,
       secure: false,
-      skipVerify: true,
       logger: true,
       // debug: true
     },
