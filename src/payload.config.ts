@@ -106,7 +106,7 @@ export default buildConfig({
       host: 'mailpit',
       port: 1025,
       secure: false,
-      logger: true,
+      logger: false,
       // debug: true
     },
   }),
